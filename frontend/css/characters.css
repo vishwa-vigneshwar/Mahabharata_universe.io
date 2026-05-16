@@ -1,0 +1,164 @@
+/* CHARACTER ABILITIES & STATS */
+
+.character-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.stat {
+    background: rgba(30, 58, 138, 0.3);
+    border: 1px solid var(--primary-blue);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.stat-name {
+    color: var(--primary-blue);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.stat-value {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* ABILITIES */
+.character-abilities {
+    margin-top: 20px;
+}
+
+.character-abilities h4 {
+    color: var(--primary-gold);
+    margin-bottom: 10px;
+}
+
+.ability-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ability-item {
+    background: rgba(20, 20, 40, 0.7);
+    border-left: 3px solid var(--primary-blue);
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+.ability-name {
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+
+.ability-description {
+    color: #aaa;
+    font-size: 0.8rem;
+    margin-top: 3px;
+}
+
+/* ARJUNA SPECIFIC */
+.arjuna-theme {
+    --character-primary: #6b8dff;
+    --character-secondary: #4a5fd4;
+}
+
+/* BHIMA SPECIFIC */
+.bhima-theme {
+    --character-primary: #d4741e;
+    --character-secondary: #a85914;
+}
+
+/* YUDHISHTHIRA SPECIFIC */
+.yudhishthira-theme {
+    --character-primary: #c9a227;
+    --character-secondary: #8b7520;
+}
+
+/* NAKULA SPECIFIC */
+.nakula-theme {
+    --character-primary: #4dd0e1;
+    --character-secondary: #26a69a;
+}
+
+/* SAHADEVA SPECIFIC */
+.sahadeva-theme {
+    --character-primary: #7e57c2;
+    --character-secondary: #5e35b1;
+}
+
+/* SKILL TREE */
+.skills-tree {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.skill-node {
+    background: rgba(20, 20, 40, 0.9);
+    border: 2px solid var(--primary-gold);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.skill-node:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+
+.skill-node.locked {
+    opacity: 0.5;
+    border-color: #666;
+}
+
+.skill-node.unlocked {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: var(--primary-gold);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    color: var(--primary-gold);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.skill-desc {
+    font-size: 0.8rem;
+    color: #aaa;
+    line-height: 1.3;
+}
+
+.skill-cost {
+    color: var(--primary-blue);
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.skill-level {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--primary-gold);
+    color: #000;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
